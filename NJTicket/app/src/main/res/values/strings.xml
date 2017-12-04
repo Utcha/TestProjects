@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NJTicket</string>
+
+
+    <string name="PEOPLE_COUNT">PEOPLE COUNT</string>
+    <string name="ZONE">ZONE</string>
+    <string name="HEX_COLOR">HEX COLOR</string>
+    <string name="INT_TICKET_COLOR">INT TICKET COLOR</string>
+    <string name="INT_BAR1_COLOR">INT BAR1 COLOR</string>
+    <string name="INT_BAR2_COLOR">INT BAR2 COLOR</string>
+    <string name="INT_BAR3_COLOR">INT BAR3 COLOR</string>
+</resources>

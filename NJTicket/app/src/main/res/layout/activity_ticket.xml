@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INTERSTATE"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textSize="70px"
+            android:layout_margin="10px"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/llBackGround"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="@drawable/gradient"
+            android:layout_margin="10px"
+            android:padding="10px">
+            <TextView
+                android:id="@+id/tvZone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="140px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ZONE RIDE"
+                android:textColor="#000000"
+                android:textSize="50px"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="**Not Valid on Light Rail Systems**"
+                android:textColor="#000000"
+                android:textSize="30px"
+                android:layout_marginBottom="50px"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="450px"
+            android:orientation="horizontal"
+            android:layout_marginBottom="200px">
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="30px"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="One Way"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="60px"/>
+
+                <TextView
+                    android:id="@+id/tvPeopleCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1 Adult"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="70px"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="400px"
+                    android:src="@drawable/qrcode"/>
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Tap to enlarge"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"
+                    android:textSize="30px" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="60px">
+
+            <TextView
+                android:id="@+id/tvCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12:48:39 AM"
+                android:textSize="70px"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+            <TextView
+                android:id="@+id/tvToday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friday, Dec 1, 2017"
+                android:textSize="70px"
+                android:textStyle="bold"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:layout_marginBottom="60px">
+            <TextView
+                android:id="@+id/tvBar1"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"/>
+            <TextView
+                android:id="@+id/tvBar2"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"/>
+            <TextView
+                android:id="@+id/tvBar3"
+                android:layout_width="0px"
+                android:layout_height="50px"
+                android:layout_weight="1"
+                android:background="@color/colorPrimaryDark"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="40px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bt_style"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="50px"
+                android:text="Back"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="110px">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expires in : "
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="50px"/>
+
+                <TextView
+                    android:id="@+id/tvExpireCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00:58:41"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="50px"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="ZONE"/>
+
+            <EditText
+                android:id="@+id/etZone"
+                android:text="3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="PEOPLE"/>
+
+            <EditText
+                android:id="@+id/etPeople"
+                android:text="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:gravity="center"
+                android:inputType="number"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15px"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="15px"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:text="Color"/>
+
+            <com.larswerkman.holocolorpicker.ColorPicker
+                android:id="@+id/picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvTicketColor"
+                android:layout_width="0px"
+                android:layout_height="80px"
+                android:layout_margin="10px"
+                android:background="@color/colorAccent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvBar1Color"
+                android:layout_width="0px"
+                android:layout_height="80px"
+                android:layout_margin="10px"
+                android:background="@color/colorAccent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvBar2Color"
+                android:layout_width="0px"
+                android:layout_height="80px"
+                android:layout_margin="10px"
+                android:background="@color/colorAccent"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tvBar3Color"
+                android:layout_width="0px"
+                android:layout_height="80px"
+                android:layout_margin="10px"
+                android:background="@color/colorAccent"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btTicketColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TicketColor"/>
+
+            <Button
+                android:id="@+id/btBar1Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bar1"/>
+
+            <Button
+                android:id="@+id/btBar2Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bar2"/>
+
+            <Button
+                android:id="@+id/btBar3Color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bar3"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CREATE"/>
+
+    </LinearLayout>
+
+
+
+</layout>
